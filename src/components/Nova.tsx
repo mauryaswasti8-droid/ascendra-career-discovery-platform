@@ -1,0 +1,71 @@
+"use client";
+import React from "react";
+
+interface NovaProps {
+  message?: string;
+  size?: "sm" | "md" | "lg";
+  className?: string;
+}
+
+export default function Nova({ message, size = "md", className = "" }: NovaProps) {
+  const sizes = { sm: 60, md: 100, lg: 150 };
+  const s = sizes[size];
+
+  return (
+    <div className={`flex flex-col items-center gap-3 ${className}`}>
+      <div className="animate-float" style={{ width: s, height: s }}>
+        <svg viewBox="0 0 200 200" width={s} height={s}>
+          {/* Body */}
+          <ellipse cx="100" cy="120" rx="60" ry="55" fill="#e0e7ff" stroke="#a5b4fc" strokeWidth="2" />
+          {/* Head */}
+          <circle cx="100" cy="75" r="50" fill="#ede9fe" stroke="#c4b5fd" strokeWidth="2" />
+          {/* Left ear tuft */}
+          <path d="M65 35 L55 10 L80 30 Z" fill="#c4b5fd" />
+          <path d="M67 35 L59 15 L78 32 Z" fill="#ede9fe" />
+          {/* Right ear tuft */}
+          <path d="M135 35 L145 10 L120 30 Z" fill="#c4b5fd" />
+          <path d="M133 35 L141 15 L122 32 Z" fill="#ede9fe" />
+          {/* Left eye (large, expressive) */}
+          <ellipse cx="80" cy="72" rx="18" ry="20" fill="white" stroke="#8b5cf6" strokeWidth="1.5" />
+          <ellipse cx="83" cy="70" rx="10" ry="12" fill="#4c1d95" />
+          <ellipse cx="86" cy="66" rx="4" ry="5" fill="white" />
+          <ellipse cx="79" cy="74" rx="2" ry="2.5" fill="white" opacity="0.7" />
+          {/* Right eye */}
+          <ellipse cx="120" cy="72" rx="18" ry="20" fill="white" stroke="#8b5cf6" strokeWidth="1.5" />
+          <ellipse cx="123" cy="70" rx="10" ry="12" fill="#4c1d95" />
+          <ellipse cx="126" cy="66" rx="4" ry="5" fill="white" />
+          <ellipse cx="119" cy="74" rx="2" ry="2.5" fill="white" opacity="0.7" />
+          {/* Beak */}
+          <path d="M93 85 L100 95 L107 85 Z" fill="#fbbf24" stroke="#f59e0b" strokeWidth="1" />
+          {/* Blush marks */}
+          <ellipse cx="65" cy="82" rx="8" ry="5" fill="#fda4af" opacity="0.5" />
+          <ellipse cx="135" cy="82" rx="8" ry="5" fill="#fda4af" opacity="0.5" />
+          {/* Wings */}
+          <ellipse cx="45" cy="120" rx="20" ry="30" fill="#c4b5fd" opacity="0.7" transform="rotate(-15 45 120)" />
+          <ellipse cx="155" cy="120" rx="20" ry="30" fill="#c4b5fd" opacity="0.7" transform="rotate(15 155 120)" />
+          {/* Feet */}
+          <path d="M80 170 L70 185 L80 180 L90 185 L80 170" fill="#fbbf24" />
+          <path d="M120 170 L110 185 L120 180 L130 185 L120 170" fill="#fbbf24" />
+          {/* Sparkles around Nova */}
+          <circle cx="30" cy="50" r="2" fill="#fbbf24" opacity="0.8">
+            <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="170" cy="40" r="2.5" fill="#c4b5fd" opacity="0.8">
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="160" cy="90" r="1.5" fill="#7dd3fc" opacity="0.8">
+            <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+          <path d="M40 90 L42 85 L44 90 L49 92 L44 94 L42 99 L40 94 L35 92 Z" fill="#fbbf24" opacity="0.7">
+            <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3s" repeatCount="indefinite" />
+          </path>
+        </svg>
+      </div>
+      {message && (
+        <div className="glass-card rounded-2xl px-4 py-3 max-w-xs text-center text-sm text-purple-800 animate-fadeIn">
+          <span className="font-medium">Nova says:</span> {message}
+        </div>
+      )}
+    </div>
+  );
+}
