@@ -104,6 +104,13 @@ export default function Navbar() {
               <Link href="/dashboard" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-purple-700 hover:bg-purple-100/60">
                 <LayoutDashboard size={18} /> Dashboard
               </Link>
+              <Link
+  href="/build-my-story"
+  onClick={() => setMobileOpen(false)}
+  className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-purple-700 hover:bg-purple-100/60"
+>
+  ✨ Find Your Narrative
+</Link>
             )}
             {user?.role === "admin" && (
               <Link href="/admin" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-amber-700 hover:bg-amber-100/60">
