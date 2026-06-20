@@ -1,0 +1,13 @@
+var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/careers/[id]/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0lpdiax._.js")
+R.c("server/chunks/ssr/0n-j_next_dist_esm_build_templates_app-page_0q46bta.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0.1rzja._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0ml9lj3._.js")
+R.c("server/chunks/ssr/Downloads_ascendra-career-discovery-platform_src_0m5ucp3._.js")
+R.c("server/chunks/ssr/0n-j_next_dist_client_components_00m5~ud._.js")
+R.c("server/chunks/ssr/0n-j_next_dist_client_components_builtin_forbidden_05.~luy.js")
+R.c("server/chunks/ssr/0n-j_next_dist_client_components_builtin_unauthorized_0yli98z.js")
+R.c("server/chunks/ssr/0n-j_next_dist_client_components_builtin_global-error_0wb~itx.js")
+R.c("server/chunks/ssr/0vpu_r-discovery-platform__next-internal_server_app_careers_[id]_page_actions_0tkejl1.js")
+R.m(97675)
+module.exports=R.m(97675).exports

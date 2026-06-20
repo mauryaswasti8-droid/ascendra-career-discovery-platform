@@ -1,0 +1,3 @@
+module.exports=[35250,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(721);a.n(d("[project]/Downloads/ascendra-career-discovery-platform/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},81394,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(721);a.n(d("[project]/Downloads/ascendra-career-discovery-platform/node_modules/next/dist/client/components/builtin/global-error.js"))},96576,a=>{"use strict";a.i(35250);var b=a.i(81394);a.n(b)},71214,a=>{a.n(a.i(96576))}];
+
+//# sourceMappingURL=0n-j_next_dist_client_components_builtin_global-error_0wb~itx.js.map

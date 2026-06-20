@@ -125,8 +125,7 @@ export default function HomePage() {
                 <p className="text-xs text-purple-600">demo@ascendra.io / demo123</p>
               </div>
               <div className="rounded-2xl bg-amber-50/80 p-4">
-                <p className="text-sm font-semibold text-amber-700 mb-1 flex items-center justify-center gap-1"><Star size={14} /> Admin Account</p>
-                <p className="text-xs text-amber-600">admin@ascendra.io / admin123</p>
+                <p className="text-sm font-semibold text-amber-700 mb-1 flex items-center justify-center gap-1"><Star size={14} /> Admin Account</p
               </div>
             </div>
             {!seeded && <p className="text-xs text-purple-500 mt-4">Setting up demo data...</p>}
