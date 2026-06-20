@@ -114,24 +114,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Demo accounts info */}
-      <section className="px-4 py-16">
-        <div className="max-w-2xl mx-auto">
-          <div className="glass-card rounded-3xl p-8 text-center">
-            <Nova size="sm" message="Try the demo accounts to explore all features!" />
-            <div className="mt-6 grid sm:grid-cols-2 gap-4">
-              <div className="rounded-2xl bg-purple-50/80 p-4">
-                <p className="text-sm font-semibold text-purple-700 mb-1 flex items-center justify-center gap-1"><Star size={14} /> Student Account</p>
-                <p className="text-xs text-purple-600">demo@ascendra.io / demo123</p>
-              </div>
-              <div className="rounded-2xl bg-amber-50/80 p-4">
-                <p className="text-sm font-semibold text-amber-700 mb-1 flex items-center justify-center gap-1"><Star size={14} /> Admin Account</p
-              </div>
-            </div>
-            {!seeded && <p className="text-xs text-purple-500 mt-4">Setting up demo data...</p>}
-          </div>
-        </div>
-      </section>
+      {/* Founder Story */}
+
+<section className="px-4 py-16">
+  <div className="max-w-4xl mx-auto">
+    <div className="glass-card rounded-3xl p-8 md:p-12">
+      <h2 className="text-3xl font-bold text-center mb-6">
+        Why I Built Ascendra
+      </h2>
+
+```
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Hi, I'm Swasti Maurya.
+  </p>
+
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Growing up in an under-resourced area, I often felt that opportunities
+    existed, but students like me didn't know where to find them.
+  </p>
+
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Whether it was scholarships, research programs, competitions,
+    internships, or study-abroad guidance, the information was scattered
+    and difficult to access without the right networks or support.
+  </p>
+
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Over the years, I worked to build my own path through leadership,
+    research, neuroscience programs, international collaborations,
+    community initiatives, and university applications abroad.
+  </p>
+
+  <p className="text-gray-700 leading-relaxed mb-4">
+    I created Ascendra so that students wouldn't have to spend years
+    searching for opportunities the way I did.
+  </p>
+
+  <p className="text-gray-700 leading-relaxed font-medium">
+    My goal is simple: no student should miss a life-changing opportunity
+    simply because they didn't know it existed.
+  </p>
+</div>
+
+  </div>
+</section>
     </div>
   );
 }
